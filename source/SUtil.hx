@@ -30,7 +30,7 @@ class SUtil
 	public static function check()
 	{
 		#if android
-		if (!Permissions.getGrantedPermissions().contains(.WRITE_EXTERNAL_STORAGE)
+		if (!Permissions.getGrantedPermissions().contains(.WRITE_EXTERNAL_STORAGE))
 			&& !Permissions.getGrantedPermissions().contains(PermissionsList.READ_EXTERNAL_STORAGE))
 		{
 			if (VERSION.SDK_INT > 23 || VERSION.SDK_INT == 23)
